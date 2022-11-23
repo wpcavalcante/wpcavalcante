@@ -1,0 +1,58 @@
+
+.logo-w{
+	fill: transparent;
+	animation: logo 8s ease infinite alternate;
+}
+.logo-w-stroke{
+	animation: logo 8s ease infinite alternate;
+}
+#logo-p{
+	fill: transparent;
+	animation: logo 8s ease infinite alternate;
+}
+
+@keyframes logo{
+	0%{
+		stroke-width: 0;
+		stroke-dasharray: 1 100;
+		fill: transparent;
+	}
+	25%{
+		stroke-width: 1;
+		fill:transparent;
+		stroke-dasharray: 100 0;
+	}
+	60%, 100%{
+		stroke-width: 0.3;
+		fill: white;
+	}
+}
+
+
+@keyframes loop{
+	100% { transform: translateX(-100%); }
+}
+
+.project-circle{
+	stroke-width: 0;
+	animation: project-btn 8s ease forwards;
+	animation-delay: 7s;
+}
+
+.project-text{
+	opacity: 0;
+}
+
+@keyframes project-btn{
+	0%{
+		stroke-width: 0;
+		stroke-dasharray: 1 100;
+	}
+	25%{
+		stroke-width: 4;
+		stroke-dasharray: 100 0;
+	}
+	60%, 100%{
+		stroke-width: 4;
+	}
+}

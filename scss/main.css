@@ -1,0 +1,573 @@
+:root {
+  --main-color: linear-gradient(90deg, #247D7D -8.33%, #12ABCD 100%);
+  --background-color: #0A0C10;
+  --sidebar-color: #0a0c10b4;
+  --text-color1: #247D7D;
+  --text-color2:#FFFFFF;
+  --text-color3:#0A0C10;
+  --text-color4: #12ABCD;
+  --font-style: "Cabin", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-style);
+  font-size: 1rem;
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo-w {
+  fill: transparent;
+  -webkit-animation: logo 8s ease infinite alternate;
+          animation: logo 8s ease infinite alternate;
+}
+
+.logo-w-stroke {
+  -webkit-animation: logo 8s ease infinite alternate;
+          animation: logo 8s ease infinite alternate;
+}
+
+#logo-p {
+  fill: transparent;
+  -webkit-animation: logo 8s ease infinite alternate;
+          animation: logo 8s ease infinite alternate;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    fill: transparent;
+    stroke-dasharray: 100 0;
+  }
+  60%, 100% {
+    stroke-width: 0.3;
+    fill: white;
+  }
+}
+
+@keyframes logo {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    fill: transparent;
+    stroke-dasharray: 100 0;
+  }
+  60%, 100% {
+    stroke-width: 0.3;
+    fill: white;
+  }
+}
+@-webkit-keyframes loop {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loop {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.project-circle {
+  stroke-width: 0;
+  -webkit-animation: project-btn 8s ease forwards;
+          animation: project-btn 8s ease forwards;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.project-text {
+  opacity: 0;
+}
+
+@-webkit-keyframes project-btn {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+  }
+  25% {
+    stroke-width: 4;
+    stroke-dasharray: 100 0;
+  }
+  60%, 100% {
+    stroke-width: 4;
+  }
+}
+
+@keyframes project-btn {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+  }
+  25% {
+    stroke-width: 4;
+    stroke-dasharray: 100 0;
+  }
+  60%, 100% {
+    stroke-width: 4;
+  }
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+.loader svg {
+  max-width: 14.4rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 8.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+  background-color: var(--background-color);
+}
+header ul a {
+  color: var(--text-color2);
+  text-transform: uppercase;
+  font-size: 2rem;
+  transition: color 0.2s ease;
+}
+header ul a:not(:last-child) {
+  margin-right: 5.3rem;
+}
+header ul a:hover {
+  color: var(--hover-color);
+}
+header a img {
+  width: 4rem;
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--sidebar-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 100;
+}
+.mobile-menu ul {
+  padding-top: 10rem;
+  width: 100%;
+}
+.mobile-menu ul a {
+  width: 100%;
+  text-align: right;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--text-color2);
+  padding: 1rem;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.about-me {
+  margin: 30rem 0;
+}
+.about-me .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-me .container .about-info h2 {
+  font-size: 4.8rem;
+  color: var(--text-color2);
+  font-weight: 300;
+}
+.about-me .container .about-info h3 {
+  font-size: 3.6rem;
+  color: var(--text-color4);
+  font-weight: 300;
+  text-align: right;
+  margin-right: -4rem;
+  transition: margin-right 0.5s ease;
+}
+.about-me .container .about-info h3:hover {
+  margin-right: -7rem;
+}
+.about-me .container .about-info p {
+  margin-top: 5rem;
+  max-width: 40rem;
+  color: var(--text-color2);
+  font-size: 1.7rem;
+  font-weight: 200;
+  line-height: 3rem;
+}
+.about-me .container .about-info a {
+  margin-top: 3rem;
+  margin-left: 30rem;
+  cursor: pointer;
+}
+.about-me .container .about-logo {
+  margin-top: -12rem;
+}
+
+.slidebar {
+  width: 100%;
+  height: 11.3rem;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.slidebar .icons {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  -webkit-animation: loop 25s linear infinite;
+          animation: loop 25s linear infinite;
+  transform: translate3d(0, 0, 0);
+}
+.slidebar .icons i {
+  font-size: 7rem;
+  color: var(--text-color2);
+  margin-right: 10rem;
+}
+
+.projects {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #221F20 -8.33%, #050505 100%);
+}
+.projects h2 {
+  color: var(--text-color1);
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 8rem;
+}
+.projects .project-card {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.projects .project-card:not(:last-child) {
+  margin-bottom: 15rem;
+}
+.projects .project-card .card {
+  max-width: 25rem;
+  height: 40rem;
+  border-radius: 1.5rem;
+  filter: drop-shadow(0px 4px 4px #020202);
+}
+.projects .project-card .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects .project-card .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  margin-left: 2.6rem;
+}
+.projects .project-card .project-info .video-wrapper {
+  width: 100%;
+  max-width: 31rem;
+  height: 18rem;
+}
+.projects .project-card .project-info .video-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects .project-card .project-info .info {
+  text-align: left;
+  margin-top: 1rem;
+}
+.projects .project-card .project-info .info h3 {
+  color: var(--text-color2);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.projects .project-card .project-info .info p {
+  margin-top: 1rem;
+  color: var(--text-color2);
+  font-size: 2rem;
+  max-width: 42rem;
+}
+.projects .project-card .project-info .buttons {
+  margin-top: 3rem;
+}
+.projects .project-card .project-info .buttons a {
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.projects .project-card .project-info .buttons a:not(:last-child) {
+  margin-right: 1.7rem;
+  color: var(--text-color3);
+  background: var(--text-color4);
+}
+.projects .project-card .project-info .buttons a:last-child {
+  background-color: var(--background-color);
+  color: var(--text-color2);
+  border: 1px solid var(--text-color1);
+  position: relative;
+  z-index: 2;
+  padding: 1rem 3rem;
+}
+.projects .project-card .project-info .buttons a:last-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--text-color4);
+  width: 0%;
+  height: 100%;
+  transition: 0.7s ease;
+}
+.projects .project-card .project-info .buttons a:last-child:hover::after {
+  width: 100%;
+}
+.projects .side {
+  justify-content: right;
+  flex-direction: row-reverse;
+}
+.projects .side .project-info {
+  margin-left: 0;
+  margin-right: 2.6rem;
+  align-items: flex-end;
+}
+.projects .side .project-info .info {
+  text-align: right;
+}
+
+.contact {
+  margin: 35rem 0;
+}
+.contact .container h2 {
+  font-size: 4rem;
+  color: var(--text-color2);
+  font-weight: 300;
+}
+.contact .container a {
+  font-size: 6rem;
+  color: var(--text-color4);
+  font-weight: 300;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  transition: margin-left 0.5s ease;
+}
+.contact .container a:hover {
+  margin-left: 11rem;
+}
+
+footer {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .btn-scroll {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+footer .container .btn-scroll img {
+  margin-right: 2rem;
+}
+footer .container .btn-scroll h4 {
+  color: var(--text-color2);
+  font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .about-me .container .about-logo {
+    max-width: 40rem;
+  }
+  .contact .container a {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 860px) {
+  .about-me .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-me .container .about-logo {
+    display: none;
+  }
+  .about-me .container .about-info {
+    text-align: center;
+  }
+  .about-me .container .about-info h3 {
+    text-align: center;
+  }
+  .about-me .container .about-info a {
+    margin-left: 0;
+  }
+}
+@media (max-width: 650px) {
+  header {
+    justify-content: flex-end;
+  }
+  header .navbar {
+    display: none;
+  }
+  header a {
+    margin-right: 2rem;
+  }
+  header a img {
+    display: block;
+  }
+  .projects .project-card .card {
+    max-width: 20rem;
+    height: 30rem;
+  }
+  .projects .project-card .project-info .video-wrapper {
+    max-width: 20rem;
+    height: 12rem;
+  }
+  .projects .project-card .project-info .video-wrapper img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .projects .project-card .project-info .info p {
+    font-size: 1.3rem;
+  }
+  .contact .container a {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-me .container .about-info h2 {
+    font-size: 3.5rem;
+  }
+  .about-me .container .about-info h3 {
+    font-size: 2.5rem;
+  }
+  .projects .project-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projects .project-card .card {
+    margin-bottom: 3rem;
+  }
+  .projects .project-card .project-info {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .projects .project-card .project-info .info {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .projects .side .project-info {
+    margin-right: 0;
+  }
+  .contact .container {
+    text-align: center;
+  }
+  .contact .container h2 {
+    font-size: 2rem;
+  }
+  .contact .container a {
+    font-size: 2.5rem;
+    margin-left: 0;
+  }
+}
+@media (max-width: 350px) {
+  .contact .container {
+    text-align: center;
+  }
+  .contact .container h2 {
+    font-size: 1.5rem;
+  }
+  .contact .container a {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 651px) {
+  .mobile-menu {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

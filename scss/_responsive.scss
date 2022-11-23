@@ -1,0 +1,156 @@
+@media(max-width:1000px){
+    .about-me{
+        .container{
+            .about-logo{
+                max-width: 40rem;
+            }
+        }
+    }
+    .contact{
+        .container{
+            a{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media(max-width:860px){
+    .about-me{
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .about-logo{
+                display: none;
+            }
+            .about-info{
+                text-align: center;
+               h3{
+                text-align: center;
+               }
+               a{
+                margin-left: 0;
+               }
+            }
+        }
+    }
+}
+
+@media(max-width:650px){
+    header{
+        justify-content: flex-end;
+        .navbar{
+            display: none;
+        }
+        a{
+            margin-right: 2rem;
+            img{
+                display: block;
+            }
+        }
+    }
+    .projects{
+        .project-card{
+            .card{
+                max-width: 20rem;
+                height: 30rem;
+            }
+            .project-info{
+                .video-wrapper{
+                    max-width: 20rem;
+                    height: 12rem;
+                    img{
+                        object-fit: fill;
+                    }
+                }
+                .info{
+                    p{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        
+    }
+    .contact{
+        .container{
+            a{
+                font-size: 3rem;
+            }
+        }
+    }
+    
+}
+
+@media(max-width:500px){
+    .about-me{
+        .container{
+            .about-info{
+                h2{
+                    font-size: 3.5rem;
+                }
+               h3{
+                font-size: 2.5rem;
+               }
+            }
+        }
+    }
+    .projects{
+        .project-card{
+            flex-direction: column;
+            justify-content: center;
+            .card{
+                margin-bottom: 3rem;
+            }
+            .project-info{
+                flex-direction: column;
+                align-items: center;
+                margin-left: 0;
+                .info{
+                    margin-top: 3rem;
+                    text-align: center; 
+                }
+                
+            }
+        }
+       .side{
+        .project-info{
+            margin-right: 0;
+        }
+       }
+    }
+    .contact{
+        .container{
+            text-align: center;
+            h2{
+                font-size: 2rem;
+            }
+            a{
+                font-size: 2.5rem;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:350px){
+    .contact{
+        .container{
+            text-align: center;
+            h2{
+                font-size: 1.5rem;
+            }
+            a{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media(min-width:651px){
+    .mobile-menu{
+        display: none;
+    }
+}
