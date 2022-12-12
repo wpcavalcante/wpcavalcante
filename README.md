@@ -9,6 +9,7 @@ Meu portfólio de projeto pessoais
 
 ## Layout 
 ![Web 1](https://github.com/wpcavalcante/Assets/blob/main/port.png)
+![Web 2](https://github.com/wpcavalcante/Assets/blob/main/port-2.png)
 
 
 
