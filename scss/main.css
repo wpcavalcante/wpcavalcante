@@ -358,10 +358,29 @@ header a img {
   font-size: 2rem;
   font-weight: bold;
 }
+.projects .project-card .project-info .info .techs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.projects .project-card .project-info .info .techs h4 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color4);
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+.projects .project-card .project-info .info .techs i {
+  font-size: 4rem;
+  color: var(--text-color4);
+}
+.projects .project-card .project-info .info .techs i:not(:last-child) {
+  margin-right: 1.5rem;
+}
 .projects .project-card .project-info .info p {
   margin-top: 1rem;
   color: var(--text-color2);
-  font-size: 2rem;
+  font-size: 1.7rem;
   max-width: 42rem;
 }
 .projects .project-card .project-info .buttons {
@@ -411,6 +430,10 @@ header a img {
 }
 .projects .side .project-info .info {
   text-align: right;
+}
+.projects .side .project-info .techs {
+  margin-top: 2rem;
+  margin-left: 10rem;
 }
 
 .contact {
@@ -541,8 +564,16 @@ footer .container .btn-scroll h4 {
     margin-top: 3rem;
     text-align: center;
   }
+  .projects .project-card .project-info .info .techs {
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
   .projects .side .project-info {
     margin-right: 0;
+  }
+  .projects .side .project-info .info .techs {
+    margin-left: 0;
   }
   .contact .container {
     text-align: center;

@@ -111,6 +111,11 @@
                 .info{
                     margin-top: 3rem;
                     text-align: center; 
+                    .techs{
+                        margin-top: 3rem;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
                 
             }
@@ -118,6 +123,11 @@
        .side{
         .project-info{
             margin-right: 0;
+            .info{
+                .techs{
+                    margin-left: 0;
+                }
+            }
         }
        }
     }

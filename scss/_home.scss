@@ -123,10 +123,29 @@
                     font-size: 2rem;
                     font-weight: bold;
                 }
+                .techs {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    h4{
+                        margin-top: 1.5rem;
+                        font-size: 1.5rem;
+                        color:var(--text-color4);
+                        text-transform: uppercase;
+                        margin-right: 1rem;
+                    }
+                    i{
+                        font-size: 4rem;
+                        color: var(--text-color4);
+                        &:not(:last-child){
+                            margin-right: 1.5rem;
+                        }
+                    }
+                }
                 p{
                     margin-top: 1rem;
                     color: var(--text-color2);
-                    font-size: 2rem;
+                    font-size: 1.7rem;
                     max-width: 42rem;
                 }
             }
@@ -181,6 +200,10 @@
             align-items: flex-end;
             .info{
                 text-align: right;
+            }
+            .techs{
+                margin-top: 2rem;
+                margin-left: 10rem;
             }
         }
     }
