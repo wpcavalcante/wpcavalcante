@@ -7,11 +7,13 @@ https://wpcavalcante.github.io/wpcavalcante/
 Meu portfólio de projeto pessoais
 
 
-## Layout 
+## Layout Web
 ![Web 1](https://github.com/wpcavalcante/Assets/blob/main/port.png)
 ![Web 2](https://github.com/wpcavalcante/Assets/blob/main/port-2.png)
 
-
+## Layout mobile
+![Mobile 1](https://github.com/wpcavalcante/Assets/blob/main/port-mobile1.png) 
+![Mobile 2](https://github.com/wpcavalcante/Assets/blob/main/port-mobile2.png)
 
 # Tecnologias utilizadas
 - HTML
